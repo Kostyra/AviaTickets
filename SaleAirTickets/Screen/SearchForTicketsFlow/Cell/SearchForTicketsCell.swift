@@ -32,6 +32,16 @@ final class SearchForTicketsCell: UICollectionViewCell {
         return textLabel
     }()
 
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    
     private func setupView() {
         contentView.addSubviews(imageBackgroundView, imageView,textLabel, translatesAutoresizingMaskIntoConstraints: false )
         NSLayoutConstraint.activate([
@@ -39,7 +49,7 @@ final class SearchForTicketsCell: UICollectionViewCell {
             imageBackgroundView.widthAnchor.constraint(equalToConstant: 48),
             imageBackgroundView.heightAnchor.constraint(equalToConstant: 48),
             imageBackgroundView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            imageBackgroundView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             
             imageView.widthAnchor.constraint(equalToConstant: 20),
             imageView.heightAnchor.constraint(equalToConstant: 20),
@@ -49,20 +59,11 @@ final class SearchForTicketsCell: UICollectionViewCell {
             textLabel.topAnchor.constraint(equalTo: imageBackgroundView.bottomAnchor),
             textLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
             textLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0),
-            textLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -150)
+            textLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0)
         ])
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: .zero)
-        setupView()
-    }
-    
-    func setup(with menuItem: MenuItem) {
+    func configurationCellCollectionеTicktes(with menuItem: MenuItem) {
         imageView.image = UIImage(named: menuItem.imageName)
         textLabel.text = menuItem.text
         imageBackgroundView.backgroundColor = menuItem.backgroundColor

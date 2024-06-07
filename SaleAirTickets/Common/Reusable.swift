@@ -26,3 +26,20 @@ extension UICollectionReusableView: ReusableHeaderView {
         return String(describing: self)
     }
 }
+
+
+extension UITableViewCell: ReusableView {
+    static var identifier: String {
+        return String(describing: self)
+    }
+}
+
+protocol ReusableHeaderFooterView: AnyObject {
+    static var identifierHeader: String { get }
+}
+
+extension UITableViewHeaderFooterView: ReusableHeaderFooterView {
+    @objc static var identifierHeader: String {
+        return String(describing: self)
+    }
+}

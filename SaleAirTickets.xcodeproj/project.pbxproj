@@ -9,21 +9,71 @@
 /* Begin PBXBuildFile section */
 		CB60AA182C0DBD530005AB6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA172C0DBD530005AB6E /* AppDelegate.swift */; };
 		CB60AA1A2C0DBD530005AB6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA192C0DBD530005AB6E /* SceneDelegate.swift */; };
-		CB60AA1C2C0DBD530005AB6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA1B2C0DBD530005AB6E /* ViewController.swift */; };
-		CB60AA1F2C0DBD530005AB6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60AA1D2C0DBD530005AB6E /* Main.storyboard */; };
+		CB60AA1C2C0DBD530005AB6E /* aviaTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA1B2C0DBD530005AB6E /* aviaTicketsViewController.swift */; };
 		CB60AA212C0DBD560005AB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB60AA202C0DBD560005AB6E /* Assets.xcassets */; };
 		CB60AA242C0DBD560005AB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60AA222C0DBD560005AB6E /* LaunchScreen.storyboard */; };
+		CB60AA2F2C0DBE330005AB6E /* AviaTicketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA2E2C0DBE330005AB6E /* AviaTicketsModel.swift */; };
+		CB60AA312C0DBE5E0005AB6E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA302C0DBE5E0005AB6E /* MainCoordinator.swift */; };
+		CB60AA332C0DBE710005AB6E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA322C0DBE710005AB6E /* CoordinatorProtocol.swift */; };
+		CB60AA352C0DC17B0005AB6E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA342C0DC17B0005AB6E /* TabBarCoordinator.swift */; };
+		CB60AA372C0DE58D0005AB6E /* AviaTicketsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA362C0DE58C0005AB6E /* AviaTicketsCoordinator.swift */; };
+		CB60AA3F2C0E07A90005AB6E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA3E2C0E07A90005AB6E /* UIView.swift */; };
+		CB60AA432C0E2AAE0005AB6E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA422C0E2AAE0005AB6E /* NetworkError.swift */; };
+		CB60AA452C0E2B580005AB6E /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA442C0E2B580005AB6E /* Localized.swift */; };
+		CB60AA482C0E358E0005AB6E /* OffersUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA472C0E358E0005AB6E /* OffersUIModel.swift */; };
+		CB60AA4B2C0EFFA20005AB6E /* AviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA4A2C0EFFA20005AB6E /* AviaModel.swift */; };
+		CB60AA4D2C0F0A1F0005AB6E /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA4C2C0F0A1F0005AB6E /* Mapper.swift */; };
+		CB60AA4F2C0F0A580005AB6E /* CoreNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA4E2C0F0A580005AB6E /* CoreNetworkManager.swift */; };
+		CB60AA512C0F0A830005AB6E /* EnterPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA502C0F0A830005AB6E /* EnterPoint.swift */; };
+		CB60AA532C0F0F8E0005AB6E /* OffersApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA522C0F0F8E0005AB6E /* OffersApiService.swift */; };
+		CB60AA552C1048C40005AB6E /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA542C1048C40005AB6E /* CustomUITextField.swift */; };
+		CB60AA572C1071E30005AB6E /* AviaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA562C1071E30005AB6E /* AviaViewCell.swift */; };
+		CB60AA592C10809F0005AB6E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA582C10809F0005AB6E /* Reusable.swift */; };
+		CB60AA5F2C118FF80005AB6E /* SearchForTicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA5E2C118FF80005AB6E /* SearchForTicketsController.swift */; };
+		CB60AA612C1190080005AB6E /* SearchForTicketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA602C1190080005AB6E /* SearchForTicketsModel.swift */; };
+		CB60AA632C1193040005AB6E /* SearchForTicketsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA622C1193040005AB6E /* SearchForTicketsCoordinator.swift */; };
+		CB60AA652C119C450005AB6E /* SeachAviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA642C119C440005AB6E /* SeachAviaModel.swift */; };
+		CB60AA672C119F950005AB6E /* TicketsOffersUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA662C119F950005AB6E /* TicketsOffersUIModel.swift */; };
+		CB60AA692C11A3B70005AB6E /* TicktesOfferApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA682C11A3B70005AB6E /* TicktesOfferApiService.swift */; };
+		CB60AA6B2C11E74B0005AB6E /* SearchForTicketsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA6A2C11E74B0005AB6E /* SearchForTicketsCell.swift */; };
+		CB60AA6D2C12F45F0005AB6E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA6C2C12F45F0005AB6E /* MenuItem.swift */; };
+		CB60AA6F2C1313770005AB6E /* SearchForTicketsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA6E2C1313770005AB6E /* SearchForTicketsTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB60AA142C0DBD530005AB6E /* SaleAirTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaleAirTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB60AA172C0DBD530005AB6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB60AA192C0DBD530005AB6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB60AA1B2C0DBD530005AB6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB60AA1E2C0DBD530005AB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB60AA1B2C0DBD530005AB6E /* aviaTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aviaTicketsViewController.swift; sourceTree = "<group>"; };
 		CB60AA202C0DBD560005AB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB60AA232C0DBD560005AB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB60AA252C0DBD560005AB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB60AA2E2C0DBE330005AB6E /* AviaTicketsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaTicketsModel.swift; sourceTree = "<group>"; };
+		CB60AA302C0DBE5E0005AB6E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		CB60AA322C0DBE710005AB6E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		CB60AA342C0DC17B0005AB6E /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		CB60AA362C0DE58C0005AB6E /* AviaTicketsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaTicketsCoordinator.swift; sourceTree = "<group>"; };
+		CB60AA3E2C0E07A90005AB6E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CB60AA422C0E2AAE0005AB6E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CB60AA442C0E2B580005AB6E /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		CB60AA472C0E358E0005AB6E /* OffersUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersUIModel.swift; sourceTree = "<group>"; };
+		CB60AA4A2C0EFFA20005AB6E /* AviaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaModel.swift; sourceTree = "<group>"; };
+		CB60AA4C2C0F0A1F0005AB6E /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		CB60AA4E2C0F0A580005AB6E /* CoreNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNetworkManager.swift; sourceTree = "<group>"; };
+		CB60AA502C0F0A830005AB6E /* EnterPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPoint.swift; sourceTree = "<group>"; };
+		CB60AA522C0F0F8E0005AB6E /* OffersApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersApiService.swift; sourceTree = "<group>"; };
+		CB60AA542C1048C40005AB6E /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
+		CB60AA562C1071E30005AB6E /* AviaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaViewCell.swift; sourceTree = "<group>"; };
+		CB60AA582C10809F0005AB6E /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		CB60AA5E2C118FF80005AB6E /* SearchForTicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsController.swift; sourceTree = "<group>"; };
+		CB60AA602C1190080005AB6E /* SearchForTicketsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsModel.swift; sourceTree = "<group>"; };
+		CB60AA622C1193040005AB6E /* SearchForTicketsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsCoordinator.swift; sourceTree = "<group>"; };
+		CB60AA642C119C440005AB6E /* SeachAviaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachAviaModel.swift; sourceTree = "<group>"; };
+		CB60AA662C119F950005AB6E /* TicketsOffersUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsOffersUIModel.swift; sourceTree = "<group>"; };
+		CB60AA682C11A3B70005AB6E /* TicktesOfferApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicktesOfferApiService.swift; sourceTree = "<group>"; };
+		CB60AA6A2C11E74B0005AB6E /* SearchForTicketsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsCell.swift; sourceTree = "<group>"; };
+		CB60AA6C2C12F45F0005AB6E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		CB60AA6E2C1313770005AB6E /* SearchForTicketsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +106,144 @@
 		CB60AA162C0DBD530005AB6E /* SaleAirTickets */ = {
 			isa = PBXGroup;
 			children = (
+				CB60AA3D2C0E07890005AB6E /* Common */,
+				CB60AA2D2C0DBD9A0005AB6E /* NetworkManager */,
+				CB60AA2C2C0DBD8D0005AB6E /* Screen */,
+				CB60AA2B2C0DBD810005AB6E /* Coordinator */,
 				CB60AA172C0DBD530005AB6E /* AppDelegate.swift */,
 				CB60AA192C0DBD530005AB6E /* SceneDelegate.swift */,
-				CB60AA1B2C0DBD530005AB6E /* ViewController.swift */,
-				CB60AA1D2C0DBD530005AB6E /* Main.storyboard */,
 				CB60AA202C0DBD560005AB6E /* Assets.xcassets */,
 				CB60AA222C0DBD560005AB6E /* LaunchScreen.storyboard */,
 				CB60AA252C0DBD560005AB6E /* Info.plist */,
 			);
 			path = SaleAirTickets;
+			sourceTree = "<group>";
+		};
+		CB60AA2B2C0DBD810005AB6E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA302C0DBE5E0005AB6E /* MainCoordinator.swift */,
+				CB60AA322C0DBE710005AB6E /* CoordinatorProtocol.swift */,
+				CB60AA342C0DC17B0005AB6E /* TabBarCoordinator.swift */,
+				CB60AA362C0DE58C0005AB6E /* AviaTicketsCoordinator.swift */,
+				CB60AA622C1193040005AB6E /* SearchForTicketsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CB60AA2C2C0DBD8D0005AB6E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA5A2C118F5E0005AB6E /* SearchForTicketsFlow */,
+				CB60AA382C0E02340005AB6E /* AviaFlow */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		CB60AA2D2C0DBD9A0005AB6E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA492C0EFF6B0005AB6E /* Models */,
+				CB60AA422C0E2AAE0005AB6E /* NetworkError.swift */,
+				CB60AA4C2C0F0A1F0005AB6E /* Mapper.swift */,
+				CB60AA4E2C0F0A580005AB6E /* CoreNetworkManager.swift */,
+				CB60AA502C0F0A830005AB6E /* EnterPoint.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		CB60AA382C0E02340005AB6E /* AviaFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA522C0F0F8E0005AB6E /* OffersApiService.swift */,
+				CB60AA462C0E2BF40005AB6E /* UIModels */,
+				CB60AA3A2C0E02650005AB6E /* Cell */,
+				CB60AA392C0E02520005AB6E /* AviaScreen */,
+			);
+			path = AviaFlow;
+			sourceTree = "<group>";
+		};
+		CB60AA392C0E02520005AB6E /* AviaScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA1B2C0DBD530005AB6E /* aviaTicketsViewController.swift */,
+				CB60AA2E2C0DBE330005AB6E /* AviaTicketsModel.swift */,
+			);
+			path = AviaScreen;
+			sourceTree = "<group>";
+		};
+		CB60AA3A2C0E02650005AB6E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA562C1071E30005AB6E /* AviaViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CB60AA3D2C0E07890005AB6E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA3E2C0E07A90005AB6E /* UIView.swift */,
+				CB60AA442C0E2B580005AB6E /* Localized.swift */,
+				CB60AA542C1048C40005AB6E /* CustomUITextField.swift */,
+				CB60AA582C10809F0005AB6E /* Reusable.swift */,
+				CB60AA6C2C12F45F0005AB6E /* MenuItem.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CB60AA462C0E2BF40005AB6E /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA472C0E358E0005AB6E /* OffersUIModel.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
+		CB60AA492C0EFF6B0005AB6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA4A2C0EFFA20005AB6E /* AviaModel.swift */,
+				CB60AA642C119C440005AB6E /* SeachAviaModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB60AA5A2C118F5E0005AB6E /* SearchForTicketsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA682C11A3B70005AB6E /* TicktesOfferApiService.swift */,
+				CB60AA5D2C118FD70005AB6E /* SearchForTicketsScreen */,
+				CB60AA5C2C118FA50005AB6E /* Cell */,
+				CB60AA5B2C118F8D0005AB6E /* UIModel */,
+			);
+			path = SearchForTicketsFlow;
+			sourceTree = "<group>";
+		};
+		CB60AA5B2C118F8D0005AB6E /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA662C119F950005AB6E /* TicketsOffersUIModel.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		CB60AA5C2C118FA50005AB6E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA6A2C11E74B0005AB6E /* SearchForTicketsCell.swift */,
+				CB60AA6E2C1313770005AB6E /* SearchForTicketsTable.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CB60AA5D2C118FD70005AB6E /* SearchForTicketsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CB60AA5E2C118FF80005AB6E /* SearchForTicketsController.swift */,
+				CB60AA602C1190080005AB6E /* SearchForTicketsModel.swift */,
+			);
+			path = SearchForTicketsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +306,6 @@
 			files = (
 				CB60AA242C0DBD560005AB6E /* LaunchScreen.storyboard in Resources */,
 				CB60AA212C0DBD560005AB6E /* Assets.xcassets in Resources */,
-				CB60AA1F2C0DBD530005AB6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +316,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60AA1C2C0DBD530005AB6E /* ViewController.swift in Sources */,
+				CB60AA3F2C0E07A90005AB6E /* UIView.swift in Sources */,
+				CB60AA1C2C0DBD530005AB6E /* aviaTicketsViewController.swift in Sources */,
+				CB60AA6B2C11E74B0005AB6E /* SearchForTicketsCell.swift in Sources */,
+				CB60AA632C1193040005AB6E /* SearchForTicketsCoordinator.swift in Sources */,
 				CB60AA182C0DBD530005AB6E /* AppDelegate.swift in Sources */,
+				CB60AA612C1190080005AB6E /* SearchForTicketsModel.swift in Sources */,
+				CB60AA332C0DBE710005AB6E /* CoordinatorProtocol.swift in Sources */,
+				CB60AA692C11A3B70005AB6E /* TicktesOfferApiService.swift in Sources */,
+				CB60AA6D2C12F45F0005AB6E /* MenuItem.swift in Sources */,
+				CB60AA372C0DE58D0005AB6E /* AviaTicketsCoordinator.swift in Sources */,
+				CB60AA482C0E358E0005AB6E /* OffersUIModel.swift in Sources */,
+				CB60AA672C119F950005AB6E /* TicketsOffersUIModel.swift in Sources */,
+				CB60AA572C1071E30005AB6E /* AviaViewCell.swift in Sources */,
+				CB60AA512C0F0A830005AB6E /* EnterPoint.swift in Sources */,
+				CB60AA552C1048C40005AB6E /* CustomUITextField.swift in Sources */,
+				CB60AA352C0DC17B0005AB6E /* TabBarCoordinator.swift in Sources */,
+				CB60AA592C10809F0005AB6E /* Reusable.swift in Sources */,
+				CB60AA6F2C1313770005AB6E /* SearchForTicketsTable.swift in Sources */,
+				CB60AA652C119C450005AB6E /* SeachAviaModel.swift in Sources */,
+				CB60AA2F2C0DBE330005AB6E /* AviaTicketsModel.swift in Sources */,
+				CB60AA4F2C0F0A580005AB6E /* CoreNetworkManager.swift in Sources */,
+				CB60AA4B2C0EFFA20005AB6E /* AviaModel.swift in Sources */,
+				CB60AA432C0E2AAE0005AB6E /* NetworkError.swift in Sources */,
+				CB60AA4D2C0F0A1F0005AB6E /* Mapper.swift in Sources */,
+				CB60AA312C0DBE5E0005AB6E /* MainCoordinator.swift in Sources */,
+				CB60AA532C0F0F8E0005AB6E /* OffersApiService.swift in Sources */,
+				CB60AA5F2C118FF80005AB6E /* SearchForTicketsController.swift in Sources */,
+				CB60AA452C0E2B580005AB6E /* Localized.swift in Sources */,
 				CB60AA1A2C0DBD530005AB6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +351,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB60AA1D2C0DBD530005AB6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB60AA1E2C0DBD530005AB6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB60AA222C0DBD560005AB6E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +492,6 @@
 				INFOPLIST_FILE = SaleAirTickets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +518,6 @@
 				INFOPLIST_FILE = SaleAirTickets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

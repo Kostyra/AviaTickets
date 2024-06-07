@@ -2,7 +2,12 @@
 //  CoordinatorProtocol.swift
 //  SaleAirTickets
 //
-//  Created by Юлия Филиппова on 03.06.2024.
+//  Created by Kos on 03.06.2024.
 //
 
-import Foundation
+import UIKit
+
+
+protocol CoordinatorProtocol: AnyObject {
+    func start() -> UIViewController
+}
