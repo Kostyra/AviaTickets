@@ -8,6 +8,9 @@
 import UIKit
 
 final class CustomView: UIView {
+    
+    //MARK: - Method
+    
     private lazy var CustomView: UIView = {
         let view = UIView()
         view.backgroundColor = .customGray1
@@ -16,6 +19,7 @@ final class CustomView: UIView {
         return  view
     }()
     
+    //MARK: - life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -25,6 +29,7 @@ final class CustomView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Properties
     
     private func setupView() {
         addSubviews(CustomView, translatesAutoresizingMaskIntoConstraints: false)
@@ -35,7 +40,4 @@ final class CustomView: UIView {
             CustomView.heightAnchor.constraint(equalToConstant: 5)
         ])
     }
-    
-
-
 }

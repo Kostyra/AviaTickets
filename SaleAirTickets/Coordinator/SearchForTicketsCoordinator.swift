@@ -13,13 +13,18 @@ protocol SearchForTicketsProtocol: AnyObject {
 
 final class SearchForTicketsCoordinator {
     
+    //MARK: - Method
+    
     private weak var parentCoordinator: AviaTicketsProtocol?
     private var rootViewController: UIViewController?
 
+    //MARK: - Life Cycle
+    
     init(parentCoordinator: AviaTicketsProtocol) {
         self.parentCoordinator = parentCoordinator
     }
     
+    //MARK: - Properties
     private func createNavigationController() -> UIViewController {
         let mapper = CoreMapper()
         let networkManager = CoreNetworkManager()
@@ -35,11 +40,15 @@ final class SearchForTicketsCoordinator {
     
 }
 
+//MARK: - extension CoordinatorProtocol
+
 extension SearchForTicketsCoordinator: CoordinatorProtocol {
     func start() -> UIViewController {
         createNavigationController()
     }
 }
+
+//MARK: - extension SearchForTicketsProtocol
 
 extension SearchForTicketsCoordinator: SearchForTicketsProtocol {
     func nextFlow() {

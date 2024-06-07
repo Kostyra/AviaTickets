@@ -16,8 +16,13 @@ protocol TicktesOfferApiServiceProtocol {
 
 
 final class TicktesOfferApiService {
+    
+    //MARK: - Method
+    
     private let mapper: CoreMapperProtocol
     private let networkManager: CoreNetworkManager
+    
+    //MARK: - Life cycle
     
     init(mapper: CoreMapperProtocol, networkManager: CoreNetworkManager) {
         self.mapper = mapper
@@ -25,6 +30,7 @@ final class TicktesOfferApiService {
     }
 }
 
+//MARK: - extension TicktesOfferApiServiceProtocol
 
 extension TicktesOfferApiService: TicktesOfferApiServiceProtocol {
     func getTicketsOffers() async throws -> [TicketsOffersUIModel] {

@@ -16,11 +16,14 @@ protocol SearchForTicketsModelProtocol {
 
 final class SearchForTicketsModel {
     
+    //MARK: - Enum
     enum State {
         case loading
         case done(ticketsOffers: [TicketsOffersUIModel])
         case error(error: String)
     }
+    
+    //MARK: - Method
     
     private let apiService: TicktesOfferApiService
     private var ticketsOffers: [TicketsOffersUIModel] = []
@@ -33,6 +36,8 @@ final class SearchForTicketsModel {
         }
     }
     
+    //MARK: - Life cycle
+    
     init(apiService: TicktesOfferApiService, coordinator: SearchForTicketsCoordinator?){
         self.apiService = apiService
         self.coordinator = coordinator
@@ -41,6 +46,8 @@ final class SearchForTicketsModel {
     deinit {
         print("SearchForTicketsModel \(#function)")
     }
+    
+    //MARK: - Properties
     
     private func getTicketsOffers() {
         Task { @MainActor [weak self] in
@@ -55,6 +62,8 @@ final class SearchForTicketsModel {
         }
     }
 }
+
+//MARK: - extension SearchForTicketsModelProtocol
 
 extension SearchForTicketsModel: SearchForTicketsModelProtocol {
     func nextFlow() {

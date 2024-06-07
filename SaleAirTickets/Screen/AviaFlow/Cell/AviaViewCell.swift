@@ -9,6 +9,7 @@ import UIKit
 
 final class AviaViewCell: UICollectionViewCell {
     
+    //MARK: - Method
     
     private lazy var imagePeople: UIImageView = {
         let image = UIImageView()
@@ -54,6 +55,8 @@ final class AviaViewCell: UICollectionViewCell {
         return label
     }()
     
+    //MARK: - Life Cycle
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         layer.cornerRadius = 20
@@ -66,6 +69,7 @@ final class AviaViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Properties
     
     private func setupCollectionCell() {
         contentView.addSubviews(imagePeople,titleLabel,townLabel,priceLabel,toLabel,imageAriaPlan,

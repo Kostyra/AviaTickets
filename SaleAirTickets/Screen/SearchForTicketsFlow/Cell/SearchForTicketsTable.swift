@@ -9,6 +9,7 @@ import UIKit
 
 final class SearchForTicketsTable: UITableViewCell {
     
+    //MARK: - Method
     
     private lazy var imageTable: UIImageView = {
         let imageView = UIImageView()
@@ -34,6 +35,8 @@ final class SearchForTicketsTable: UITableViewCell {
         return textLabel
     }()
 
+    //MARK: - Life cycle
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -44,6 +47,8 @@ final class SearchForTicketsTable: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Properties
+
     private func setup() {
         addSubviews(imageTable,textCityTable,textTable, translatesAutoresizingMaskIntoConstraints: false)
         NSLayoutConstraint.activate([

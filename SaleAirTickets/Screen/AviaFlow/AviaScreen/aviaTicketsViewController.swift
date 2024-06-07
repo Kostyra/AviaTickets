@@ -13,6 +13,12 @@ protocol  AviaTicketsViewControllerDelegate: AnyObject {
 
 final class AviaTicketsViewController: UIViewController {
 
+    //MARK: - Typealias
+    
+    typealias DataSource = UICollectionViewDiffableDataSource <Int, OffersUIModel>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, OffersUIModel>
+    
+    //MARK: - Method
     private var viewModel: AviaTicketsModelProtocol
     private lazy var dataSource = makeDataSource()
     
@@ -21,10 +27,6 @@ final class AviaTicketsViewController: UIViewController {
         collectionView.register(AviaViewCell.self, forCellWithReuseIdentifier: AviaViewCell.identifier)
         return collectionView
     }()
-    
-    typealias DataSource = UICollectionViewDiffableDataSource <Int, OffersUIModel>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, OffersUIModel>
-    
     
     private lazy var headerLabel: UILabel = {
         let label = UILabel()
@@ -84,18 +86,10 @@ final class AviaTicketsViewController: UIViewController {
         stack.layoutMargins = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
         stack.isLayoutMarginsRelativeArrangement = true
         stack.layer.borderColor = UIColor(named: "customGray2")?.cgColor
-//        stack.layer.shadowColor = UIColor.red.cgColor
-//        stack.layer.shadowOffset = CGSize(width: 0, height: 1)
-//        stack.layer.shadowRadius = 20
-//        stack.layer.shadowOpacity = 0.5
-//        let shadowSize: CGFloat = 5
-//        let contactRect = CGRect(x: shadowSize, y: stack.bounds.height  , width: stack.bounds.width  , height: shadowSize)
-//
-//        layer.shadowPath = UIBezierPath(ovalIn: contactRect).cgPath
         return stack
     }()
     
-    
+    //MARK: - Method
     
     init(viewModel: AviaTicketsModelProtocol) {
         self.viewModel = viewModel
@@ -112,6 +106,8 @@ final class AviaTicketsViewController: UIViewController {
         bindingModel()
         viewModel.getOffer()
     }
+    
+    //MARK: - Proporties
     
     private func bindingModel() {
         viewModel.stateChanger = { [weak self] state in

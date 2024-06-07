@@ -17,9 +17,13 @@ protocol TabBarCoordinatorProtocol:AnyObject {
 
 final class TabBarCoordinator {
     
+    //MARK: - Method
+    
     private weak var parentCoordinator: MainProtocol?
     private var tabBarController: UITabBarController
     private var childCoordinators: [CoordinatorProtocol] = []
+    
+    //MARK: - Life Cycle
     
     init(parentCoordinator: MainProtocol, tabBarController: UITabBarController) {
         self.parentCoordinator = parentCoordinator
@@ -76,12 +80,15 @@ final class TabBarCoordinator {
     }
 }
 
+//MARK: - extension CoordinatorProtocol
 
 extension TabBarCoordinator: CoordinatorProtocol {
     func start() -> UIViewController {
         createTabBar()
     }
 }
+
+//MARK: - extension TabBarCoordinatorProtocol
 
 extension TabBarCoordinator: TabBarCoordinatorProtocol {
     func pushAviaTickets() {

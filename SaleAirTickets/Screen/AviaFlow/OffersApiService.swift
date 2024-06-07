@@ -13,14 +13,21 @@ protocol OffersApiServiceProtocol {
 }
 
 final class OffersApiService {
+    
+    //MARK: - Method
+    
     private let mapper: CoreMapperProtocol
     private let networkManager: CoreNetworkManager
+    
+    //MARK: - Life Cycle
     
     init(mapper: CoreMapperProtocol, networkManager: CoreNetworkManager) {
         self.mapper = mapper
         self.networkManager = networkManager
     }
 }
+
+//MARK: - extension OffersApiServiceProtocol
 
 extension OffersApiService: OffersApiServiceProtocol {
     func getOffers() async throws -> [OffersUIModel] {

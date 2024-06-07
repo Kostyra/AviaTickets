@@ -14,15 +14,19 @@ protocol AviaTicketsProtocol: AnyObject {
 
 final class AviaTicketsCoordinator {
     
+    //MARK: - Method
+    
     private weak var parentCoordinator: TabBarCoordinatorProtocol?
     private var navigationController: UINavigationController?
     private var rootViewController: UIViewController?
     
-    
+    //MARK: - Life cycle
     
     init(parentCoordinator: TabBarCoordinatorProtocol) {
         self.parentCoordinator = parentCoordinator
     }
+    
+    //MARK: - Properties
     
     private func createNavigationController() -> UIViewController {
         let mapper = CoreMapper()
@@ -43,11 +47,15 @@ final class AviaTicketsCoordinator {
    }
 }
 
+//MARK: - extension CoordinatorProtocol
+
 extension AviaTicketsCoordinator: CoordinatorProtocol {
     func start() -> UIViewController {
         createNavigationController()
     }
 }
+
+//MARK: - extension AviaTicketsProtocol
 
 extension AviaTicketsCoordinator: AviaTicketsProtocol {
     func nextFlow() {

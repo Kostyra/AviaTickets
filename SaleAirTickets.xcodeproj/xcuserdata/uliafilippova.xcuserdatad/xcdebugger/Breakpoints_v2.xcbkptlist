@@ -94,8 +94,8 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/AviaTicketsModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "getOffers()"
             landmarkType = "7">
             <Locations>
@@ -172,8 +172,8 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/AviaTicketsModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "getOffers()"
             landmarkType = "7">
          </BreakpointContent>
@@ -188,8 +188,8 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/AviaTicketsModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "getOffers()"
             landmarkType = "7">
          </BreakpointContent>
@@ -204,8 +204,8 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/aviaTicketsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "bindingModel()"
             landmarkType = "7">
          </BreakpointContent>
@@ -220,9 +220,9 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/aviaTicketsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "setupView()"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "bindingModel()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -236,10 +236,10 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/aviaTicketsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "AviaTicketsViewController"
-            landmarkType = "3">
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "bindingModel()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -268,8 +268,8 @@
             filePath = "SaleAirTickets/Coordinator/AviaTicketsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "nextFlow()"
             landmarkType = "7">
             <Locations>
@@ -316,8 +316,8 @@
             filePath = "SaleAirTickets/Coordinator/AviaTicketsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "nextFlow()"
             landmarkType = "7">
             <Locations>
@@ -364,8 +364,8 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/AviaTicketsModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "nextFlow()"
             landmarkType = "7">
          </BreakpointContent>
@@ -396,10 +396,10 @@
             filePath = "SaleAirTickets/Coordinator/AviaTicketsCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "AviaTicketsCoordinator"
-            landmarkType = "21">
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "nextFlow()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "09F43A96-7B3C-47C4-B731-A617943AF99C - 6c0ae604b39c30e6"
@@ -444,10 +444,10 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/aviaTicketsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "touchTextField()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -460,10 +460,10 @@
             filePath = "SaleAirTickets/Screen/AviaFlow/AviaScreen/aviaTicketsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "touchTextField()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "CCD62EE5-6491-4B38-A395-A171756309CF - 728b7cec70f3e044"

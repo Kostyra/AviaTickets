@@ -15,11 +15,15 @@ protocol AviaTicketsModelProtocol {
 
 final class AviaTicketsModel {
     
+    //MARK: - Enum
+    
     enum State {
         case loading
         case done(offers: [OffersUIModel])
         case error(error: String)
     }
+    
+    //MARK: - Method
     
     private let apiService: OffersApiService
     private var offers: [OffersUIModel] = []
@@ -32,6 +36,7 @@ final class AviaTicketsModel {
         }
     }
     
+    //MARK: - Life cycle
     init(coordinator: AviaTicketsCoordinator?, apiService: OffersApiService) {
         self.coordinator = coordinator
         self.apiService = apiService
@@ -39,6 +44,8 @@ final class AviaTicketsModel {
     deinit {
         print("AviaTicketsModel \(#function)")
     }
+    
+    //MARK: - Properties
     
     private func getOffers() {
         Task { @MainActor [weak self] in
@@ -53,6 +60,8 @@ final class AviaTicketsModel {
         }
     }
 }
+
+//MARK: - extension AviaTicketsModelProtocol
 
 extension AviaTicketsModel: AviaTicketsModelProtocol {
     func getOffer() {

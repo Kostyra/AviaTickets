@@ -13,14 +13,19 @@ protocol MainProtocol: AnyObject {
 
 final class MainCoordinator {
     
+    //MARK: - Method
     var childCoordinators: [CoordinatorProtocol] = []
     var tabBarController = UITabBarController()
     
     private var rootViewController: UIViewController
     
+    //MARK: - Life Cycle
+    
     init(rootViewController: UIViewController) {
         self.rootViewController = rootViewController
     }
+    
+    //MARK: - Properties
     
     private func tabBarCoordinator() -> CoordinatorProtocol {
         let tabBarCoordinator = TabBarCoordinator(parentCoordinator: self, tabBarController: tabBarController)
@@ -80,6 +85,7 @@ final class MainCoordinator {
     }
 }
 
+//MARK: - extension CoordinatorProtocol
 
 extension MainCoordinator: CoordinatorProtocol {
     func start() -> UIViewController {

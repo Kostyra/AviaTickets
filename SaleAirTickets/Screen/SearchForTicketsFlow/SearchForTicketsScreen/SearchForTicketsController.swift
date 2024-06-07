@@ -9,6 +9,7 @@ import UIKit
 
 final class SearchForTicketsController: UIViewController {
     
+    //MARK: - Method
     
     private let mainMenu: [MenuItem]
     private let mainMenuTable: [MenuItemTable]
@@ -47,6 +48,7 @@ final class SearchForTicketsController: UIViewController {
         return stack
     }()
 
+    //MARK: - Life cycle
     
     init(viewModel: SearchForTicketsModelProtocol, mainMenu: [MenuItem], mainMenuTable: [MenuItemTable]) {
         self.viewModel = viewModel
@@ -68,7 +70,9 @@ final class SearchForTicketsController: UIViewController {
         bindingModel()
 
     }
-        
+    
+    //MARK: - Properties
+    
     private func setupCollectionView() {
         collectionView.backgroundColor = .customBlack
         collectionView.dataSource = self
@@ -85,9 +89,7 @@ final class SearchForTicketsController: UIViewController {
     
     private func setupView() {
         view.addSubviews(customView, hStack, separator,collectionView, tableView, translatesAutoresizingMaskIntoConstraints: false)
-        
         NSLayoutConstraint.activate([
-            
             customView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             customView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             customView.widthAnchor.constraint(equalToConstant: 38),
@@ -112,7 +114,6 @@ final class SearchForTicketsController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -280),
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-  
         ])
     }
     
@@ -131,6 +132,7 @@ final class SearchForTicketsController: UIViewController {
     }
 }
 
+//MARK: - extension UICollectionViewDataSource
 
 extension SearchForTicketsController: UICollectionViewDataSource {
     
@@ -147,7 +149,8 @@ extension SearchForTicketsController: UICollectionViewDataSource {
     }
 }
 
-// MARK: - UICollectionViewDelegateFlowLayout
+// MARK: - extension UICollectionViewDelegateFlowLayout
+
 extension SearchForTicketsController: UICollectionViewDelegateFlowLayout {
     
     private func itemWidth(for width: CGFloat, spacing: CGFloat) -> CGFloat {
@@ -193,6 +196,7 @@ extension SearchForTicketsController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+//MARK: - extension UITableViewDelegate UITableViewDataSource
 extension SearchForTicketsController: UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainMenuTable.count

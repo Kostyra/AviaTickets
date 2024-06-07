@@ -9,6 +9,8 @@ import UIKit
 
 final class SearchForTicketsCell: UICollectionViewCell {
     
+    //MARK: - Method
+    
     private lazy var imageBackgroundView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 8
@@ -32,6 +34,8 @@ final class SearchForTicketsCell: UICollectionViewCell {
         return textLabel
     }()
 
+    //MARK: - Life cycle
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         setupView()
@@ -41,6 +45,7 @@ final class SearchForTicketsCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    //MARK: - Properties
     
     private func setupView() {
         contentView.addSubviews(imageBackgroundView, imageView,textLabel, translatesAutoresizingMaskIntoConstraints: false )
