@@ -12,9 +12,9 @@ final class SearchForTicketsController: UIViewController {
     
     private let mainMenu: [MenuItem]
     private let mainMenuTable: [MenuItemTable]
-
-    
     private var viewModel: SearchForTicketsModelProtocol
+    private lazy var customView = CustomView()
+    
     private lazy var toTextField = CustomUITextField(placeholder: "Откуда - Москва", fontSize: 16, backgroundColor: .customGray1, icon: UIImage(named: "airplanTo"))
     
     private lazy var fromTextField = CustomUITextField(placeholder: "Куда - Турция", fontSize: 16, backgroundColor: .customGray1, icon: UIImage(named: "searchFrom"))
@@ -61,7 +61,7 @@ final class SearchForTicketsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.backgroundColor = .customBlack
         setupView()
         setupCollectionView()
         setupTableView()
@@ -70,7 +70,7 @@ final class SearchForTicketsController: UIViewController {
     }
         
     private func setupCollectionView() {
-        collectionView.backgroundColor = .black
+        collectionView.backgroundColor = .customBlack
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -79,14 +79,20 @@ final class SearchForTicketsController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.layer.cornerRadius = 20
-        tableView.backgroundColor = .black
+        tableView.backgroundColor = .customBlack
         tableView.separatorColor = .customGray4
     }
     
     private func setupView() {
-        view.addSubviews(hStack, separator,collectionView, tableView, translatesAutoresizingMaskIntoConstraints: false)
+        view.addSubviews(customView, hStack, separator,collectionView, tableView, translatesAutoresizingMaskIntoConstraints: false)
         
         NSLayoutConstraint.activate([
+            
+            customView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
+            customView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            customView.widthAnchor.constraint(equalToConstant: 38),
+            customView.heightAnchor.constraint(equalToConstant: 5),
+            
             hStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
             hStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             hStack.widthAnchor.constraint(equalToConstant: 328),

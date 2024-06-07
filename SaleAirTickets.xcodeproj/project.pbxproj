@@ -38,6 +38,7 @@
 		CB60AA6B2C11E74B0005AB6E /* SearchForTicketsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA6A2C11E74B0005AB6E /* SearchForTicketsCell.swift */; };
 		CB60AA6D2C12F45F0005AB6E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA6C2C12F45F0005AB6E /* MenuItem.swift */; };
 		CB60AA6F2C1313770005AB6E /* SearchForTicketsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA6E2C1313770005AB6E /* SearchForTicketsTable.swift */; };
+		CB60AA712C136A8E0005AB6E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60AA702C136A8E0005AB6E /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		CB60AA6A2C11E74B0005AB6E /* SearchForTicketsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsCell.swift; sourceTree = "<group>"; };
 		CB60AA6C2C12F45F0005AB6E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		CB60AA6E2C1313770005AB6E /* SearchForTicketsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsTable.swift; sourceTree = "<group>"; };
+		CB60AA702C136A8E0005AB6E /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				CB60AA5D2C118FD70005AB6E /* SearchForTicketsScreen */,
 				CB60AA5C2C118FA50005AB6E /* Cell */,
 				CB60AA5B2C118F8D0005AB6E /* UIModel */,
+				CB60AA702C136A8E0005AB6E /* CustomView.swift */,
 			);
 			path = SearchForTicketsFlow;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				CB60AA3F2C0E07A90005AB6E /* UIView.swift in Sources */,
 				CB60AA1C2C0DBD530005AB6E /* aviaTicketsViewController.swift in Sources */,
+				CB60AA712C136A8E0005AB6E /* CustomView.swift in Sources */,
 				CB60AA6B2C11E74B0005AB6E /* SearchForTicketsCell.swift in Sources */,
 				CB60AA632C1193040005AB6E /* SearchForTicketsCoordinator.swift in Sources */,
 				CB60AA182C0DBD530005AB6E /* AppDelegate.swift in Sources */,

@@ -28,7 +28,7 @@ final class SearchForTicketsCell: UICollectionViewCell {
         textLabel.textColor = .white
         textLabel.textAlignment = .center
         textLabel.numberOfLines = 2
-        textLabel.backgroundColor = .black
+        textLabel.backgroundColor = .customBlack
         return textLabel
     }()
 
