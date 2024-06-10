@@ -150,7 +150,7 @@ final class AviaTicketsViewController: UIViewController {
             collectionView.topAnchor.constraint(equalTo: headerCollectionLabel.bottomAnchor, constant: 20),
             collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
         ])
     }
     

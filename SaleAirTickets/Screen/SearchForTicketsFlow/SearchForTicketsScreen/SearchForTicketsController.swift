@@ -82,7 +82,6 @@ final class SearchForTicketsController: UIViewController {
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.layer.cornerRadius = 20
         tableView.backgroundColor = .customBlack
         tableView.separatorColor = .customGray4
     }
@@ -111,10 +110,12 @@ final class SearchForTicketsController: UIViewController {
             collectionView.heightAnchor.constraint(equalToConstant: 130),
             
             tableView.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 10),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -280),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            
         ])
+
     }
     
     private func bindingModel() {

@@ -71,4 +71,45 @@ final class SearchForTicketsTable: UITableViewCell {
         self.textCityTable.text = popular.textCity
         self.textTable.text = popular.text
     }
-}
+    
+    override func layoutSubviews() {
+            super.layoutSubviews()
+            
+            let corners: CACornerMask
+            if isFirstCell {
+                corners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            } else if isLastCell {
+                corners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+            } else {
+                corners = []
+            }
+
+            if !corners.isEmpty {
+                let cornerRadius: CGFloat = 10.0
+                layer.cornerRadius = cornerRadius
+                layer.maskedCorners = corners
+                layer.masksToBounds = true
+            } else {
+                layer.cornerRadius = 0
+            }
+        }
+        
+        private var isFirstCell: Bool {
+            guard let tableView = superview as? UITableView else { return false }
+            
+            if let firstVisibleIndexPath = tableView.indexPathsForVisibleRows?.first {
+                return firstVisibleIndexPath == tableView.indexPath(for: self)
+            }
+            return false
+        }
+        
+        private var isLastCell: Bool {
+            guard let tableView = superview as? UITableView else { return false }
+            
+            if let lastVisibleIndexPath = tableView.indexPathsForVisibleRows?.last {
+                return lastVisibleIndexPath == tableView.indexPath(for: self)
+            }
+            return false
+        }
+    }
+
